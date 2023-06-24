@@ -1,0 +1,85 @@
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global de la police de caractère */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Styles pour la navbar */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.active .nav-link {
+    color: #007bff;
+}
+
+/* Styles pour les boutons */
+.btn {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0062cc;
+    border-color: #0062cc;
+}
+
+/* Styles pour les titres */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+/* Styles pour les formulaires */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-control {
+    height: 48px;
+    font-size: 18px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    margin-top: 24px;
+}
+
+.btn-submit:hover {
+    background-color: #0062cc;
+    border-color: #0062cc;
+}
+
+/* Styles pour les messages d'erreur */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 8px;
+}
