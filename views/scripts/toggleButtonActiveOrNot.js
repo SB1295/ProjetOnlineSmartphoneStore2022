@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', () => {
             // Récupérer l'ID de l'utilisateur et le statut à partir des attributs de données
             const userId = button.dataset.userId;
-            const userStatus = button.dataset.userStatus;
+            const active = button.dataset.userStatus;
 
             // Requête AJAX pour mettre à jour le statut de l'utilisateur
             const xhr = new XMLHttpRequest();
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Vérifier la réponse de la requête
                 if (xhr.status === 200) {
                     // Mise à jour de l'apparence du bouton et du texte en fonction du nouveau statut
-                    if (userStatus === '1') {
+                    if (active === '1') {
                         button.classList.remove('btn-success');
                         button.classList.add('btn-warning');
                         button.innerHTML = '<i class="bi bi-x-circle-fill"></i> Inactif';
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
             };
-            xhr.send(`userId=${userId}&userStatus=${userStatus}`);
+            xhr.send(`userId=${userId}&active=${active}`);
         });
     });
 });
