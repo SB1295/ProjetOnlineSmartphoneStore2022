@@ -13,7 +13,7 @@ function togglePasswordVisibility() {
         eyeIcon.innerHTML = '<i class="fas fa-eye-slash"></i>'; // Changer l'icône en œil barré
     } else {
         passwordInput.type = 'password';
-        eyeIcon.innerHTML = '<i class="fas fa-eye"></i>'; // Changer l'icône en œilmmmmmm
+        eyeIcon.innerHTML = '<i class="fas fa-eye"></i>'; // Changer l'icône en œil
     }
 }
 
